@@ -13,4 +13,4 @@ project/plugins/project/
 .scala_dependencies
 
 #
-.project/boot/scala-2.9.1/*
+.project/boot/*
