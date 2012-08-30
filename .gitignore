@@ -13,4 +13,9 @@ project/plugins/project/
 .scala_dependencies
 
 #
-.project/boot/*/*.jar
+code/scala/project/boot/scala-2.9.1/org.scala-tools.sbt/sbt/0.11.2/
+code/scala/project/boot/other/
+code/scala/project/boot/scala-2.9.1/lib/
+code/scala/project/boot/scala-2.9.1/org.scala-tools.sbt/sbt/0.11.2/xsbti/
+code/scala/project/boot/sbt.boot.lock
+
