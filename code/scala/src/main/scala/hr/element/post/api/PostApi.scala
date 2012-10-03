@@ -17,6 +17,10 @@ object PostApi {
     list \\ "mjesto" map City.apply
   }
 
+
+
+
+
   def findCities(cityName: String) = {
     val name = cityName.toLowerCase
 
