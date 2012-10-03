@@ -1,8 +1,8 @@
-organization := "com.example"
+organization := "hr.element.hr-post-api"
 
-name := "project-name"
+name := "hr-post-api"
 
-version := "0.0.0"
+version := "0.0.1"
 
 scalaVersion := "2.9.1"
 
@@ -29,3 +29,15 @@ libraryDependencies ++= Seq(
   , "com.github.scala-incubator.io" % "scala-io-core_2.9.1" % "0.4.1"
 )
 
+publishTo <<= (version) ( v => Some(
+  if (v endsWith "SNAPSHOT") {
+    "Element Snapshots" at "http://maven.element.hr/nexus/content/repositories/snapshots/"
+  }
+  else {
+    "Element Releases" at "http://maven.element.hr/nexus/content/repositories/releases/"
+  }
+))
+
+credentials += Credentials(Path.userHome / ".publish" / "element.credentials")
+
+publishArtifact in (Compile, packageDoc) := false
