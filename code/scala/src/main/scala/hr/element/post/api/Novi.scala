@@ -1,7 +1,6 @@
 package hr.element.post.api
 
-class Dinamo {
+class Novi {
+//sss
 
-
-  // alalas
 }
